@@ -20,6 +20,7 @@ export class AppComponent {
     window.open(this.url, '_blank'); 
   }
   onInput(){
+    // regex for valid name
     const nameRegex = RegExp('^[A-Z]{1}[a-zA-Z\\s]{2,}$');
     if(nameRegex.test(this.name)){
       this.nameError = "";
