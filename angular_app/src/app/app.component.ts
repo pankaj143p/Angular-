@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
+  standalone: false,
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'helloworld';
+  title = 'angular_app';
   imgUrl='logo.png';
   url='https://www.bridgelabz.com';
+  name : string ="";
   ngOnInit() {
     this.title = 'Hello World from BridgeLabz.';
   }
@@ -19,3 +19,6 @@ export class AppComponent {
     window.open(this.url, '_blank'); 
   }
 }
+
+
+

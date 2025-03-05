@@ -1,5 +1,9 @@
 <div>
   <img [src]="imgUrl" (click)="onClick($event)" alt="bridgelabz logo"/>
   <h1>{{this.title}}</h1>
+  <h1>Hello {{this.name}} form bridgelabz !</h1>
+</div>
+<div>
+  <input [(ngModel)]="name" type="text" placeholder="Enter your name"><br>
 </div>
 <router-outlet></router-outlet>
